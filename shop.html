@@ -1,0 +1,151 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lastlings official website">
+    <meta name="author" content="Danny Menesess">
+
+    <title>CONTACT | Lastlings</title>
+
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <!-- Lastlings Contact Page -->
+    <section class="container-fluid hidden-anim">
+        <nav class="navbar navbar-default shop-navbar">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed black-collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <h4 class="brand-black-nav">LASTLINGS</h4>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse shop-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">LASTLINGS</a></li>
+                <li><a href="tour.html">TOUR<span class="sr-only">(current)</span></a></li>
+                <li class="active"><a href="#">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+      <!-- Shop Main Page -->
+      <section class="shop-showcase">
+        <div class="shop-showcase-img">
+          <h1 class="shop-showcase-title">SHOP</h1>
+        </div>
+        <i class="fa fa-angle-down arrow-anim" aria-hidden="true"></i>
+      </section>
+      <section class="shop-merchadise col-xs-12">
+        <ul class="shop-products">
+          <li class="product">
+              <div class="product-img"><img src="./img/shop/cap(black).jpg" alt="Lastings Cap" width=200px height=200px></div>
+              <h4 class="product-name">faces cap (black)</h4>
+              <h6 class="product-price">$34.95</h6>
+              <!-- Shop trigger modal -->
+              <button type="button" class="btn btn-primary shopButton" id="faces-cap" onclick="displayModalInfo(this.id)" data-toggle="modal" data-target="#shopModal">
+                <h5 class="product-view">view product</h5>
+              </button>
+            </li>
+          <li class="product">
+              <div class="product-img"><img src="./img/shop/shirt(black).jpg" alt="" width=200px height=200px></div>
+              <h4 class="product-name">embroidery tee (black)</h4>
+              <h6 class="product-price">$34.95</h6>
+              <!-- Shop trigger modal -->
+              <button type="button" class="btn btn-primary shopButton" id="embroidery-tee-black" onclick="displayModalInfo(this.id)" data-toggle="modal" data-target="#shopModal">
+                <h5 class="product-view">view product</h5>
+              </button>
+          </li>
+          <li class="product">
+              <div class="product-img"><img src="./img/shop/shirt(tan).jpg" alt="" width=200px height=200px></div>
+              <h4 class="product-name">embroidery tee (tan)</h4>
+              <h6 class="product-price">$34.95</h6>
+              <!-- Shop trigger modal -->
+              <button type="button" class="btn btn-primary shopButton" id="embroidery-tee-tan" onclick="displayModalInfo(this.id)" data-toggle="modal" data-target="#shopModal">
+                <h5 class="product-view">view product</h5>
+              </button>
+          </li>
+          <li class="product">
+              <div class="product-img"><img src="./img/shop/shirt(white).jpg" alt="" width=200px height=200px></div>
+              <h4 class="product-name">embriodery tee (white)</h4>
+              <h6 class="product-price">$34.95</h6>
+              <!-- Shop trigger modal -->
+              <button type="button" class="btn btn-primary shopButton" id="embroidery-tee-white" onclick="displayModalInfo(this.id)" data-toggle="modal" data-target="#shopModal">
+                <h5 class="product-view">view product</h5>
+              </button>
+          </li>
+          <li class="product">
+              <div class="product-img"><img src="./img/shop/hoodie.jpg" alt="" width=200px height=200px></div>
+              <h4 class="product-name">embroided hoodie (black)</h4>
+              <h6 class="product-price">$59.95</h6>
+              <!-- Shop trigger modal -->
+              <button type="button" class="btn btn-primary shopButton" id="embroided-hoodie" onclick="displayModalInfo(this.id)" data-toggle="modal" data-target="#shopModal">
+                <h5 class="product-view">view product</h5>
+              </button>
+          </li>
+          <li class="product">
+              <div class="product-img"><img src="./img/shop/pin.jpg" alt="pin" width=150 heigth=150px></div>
+              <h4 class="product-name">enamel pin</h4>
+              <h6 class="product-price">$5.95</h6>
+
+              <!-- Shop trigger modal -->
+              <button type="button" class="btn btn-primary shopButton"  id="enamel-pin" onclick="displayModalInfo(this.id)" data-toggle="modal" data-target="#shopModal">
+                <h5 class="product-view">view product</h5>
+              </button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Modal -->
+      <div class="modal fade shop-modal" id="shopModal" tabindex="-1" role="dialog" aria-labelledby="shopModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="col-md-6 product-img">
+                <img id="shopModalImg" src="" alt="product" height="250px" width="250px">
+              </div>
+              <div class="col-md-6 product-info">
+                <h3 class="modal-title" id="shopModalLabel"></h3>
+                <h5 class="p_price" id="shopModalPrice"></h5>
+                <select class="size-dropdown">
+                  <option value="small">SMALL</option>
+                  <option value="medium">MEDIUM</option>
+                  <option value="large">LARGE</option>
+                  <option value="xlarge">XLARGE</option>
+                  <option value="xxlarge">2X-LARGE</option>
+                </select>
+                <button type="button" id="cart-btn" class="addcart-btn">ADD TO CART</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

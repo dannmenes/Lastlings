@@ -1,0 +1,80 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lastlings official website">
+    <meta name="author" content="Danny Menesess">
+
+    <title>L A S T L I N G S</title>
+
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+    <!-- Lastlings Home Page -->
+    <div class="home hidden-anim">
+      <div class="fullscreenBg">
+        <video class="musicVideo"  autoplay="true" loop muted>
+          <source src="vid/urgesHD.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="filter"></div>
+      <div class="row home-content">
+        <div class="col-md-8 col-xs-12 intro">
+          <h1 class="title">LASTLINGS</h1>
+          <h5 class="releaseEP">VERSES EP - OUT NOW ON ITUNES &amp; SPOTIFY</h5>
+          <ul class="social-media home-social">
+              <li><a href="https://open.spotify.com/artist/0M7GyeyRi2fG8c1LdP4jhi#_=_" target="_blank"><i class="fa fa-spotify fa-lg" aria-hidden="true"></i></a></li>
+              <li><a href="https://soundcloud.com/lastlings" target="_blank"><i class="fa fa-soundcloud fa-lg" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.instagram.com/lastlingslastlings/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+              <li><a href="https://www.facebook.com/lastlingslastlings" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+              <li><a href="https://twitter.com/LASTLINGS" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xs-12 navigation clearfix">
+          <ul class="horizontal pages">
+            <li><a href="tour.html">TOUR</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Video trigger modal -->
+      <button type="button" class="playButton" onclick="playYouTubeModal()" data-toggle="modal" data-target="#videoModal">
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" onclick="closeVideo()" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <iframe id="videoPlayer" type="text/html" width="640" height="390"
+                frameborder="0">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

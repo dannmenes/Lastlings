@@ -1,0 +1,149 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA_Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lastlings official website">
+    <meta name="author" content="Danny Menesess">
+
+    <title>TOUR | Lastlings</title>
+
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Julius+Sans+One">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- Lastlings Tour Page -->
+    <section class="tour container-fluid hidden-anim">
+      <div class="showcase">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <h4 class="brand-nav">LASTLINGS</h4>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="index.html">LASTLINGS</a></li>
+                <li class="active"><a href="#">TOUR<span class="sr-only">(current)</span></a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+
+
+              </ul>
+
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <h1 class="tourTitle col-md-12 col-xs-12">Urges Tour</h1>
+      </div>
+      <div class="filter tourFilter"></div>
+      <div class="tourContent">
+        <div class="row tour-headers">
+          <h3 id="upcoming" class="dateHeading date-active col-md-6 col-xs-6" onclick="displayDates(this.id)">Upcoming  Dates</h3>
+          <h3 id="past" class="dateHeading col-md-6 col-xs-6" onclick="displayDates(this.id)">Past Dates</h3>
+        </div>
+        <div class="upcomingDates col-md-12 col-xs-12 animated">
+          <ul>
+            <li class="tourInfo">
+                <h6 class="date"><i class="fa fa-calendar"></i>SEP 30</h6>
+                <h6 class="venue">the workers club</h6>
+                <h6 class="location">melbourne, australia</h6>
+                <a href="#" class="tickets"><i class="fa fa-ticket"></i>Tickets</a>
+            </li>
+            <li class="tourInfo">
+
+                <h6 class="date"><i class="fa fa-calendar"></i>OCT 07</h6>
+                <h6 class="venue">lansdowne hotel</h6>
+                <h6 class="location">chippendale, australia</h6>
+                <a href="#" class="tickets"><i class="fa fa-ticket"></i>Tickets</a>
+            </li>
+            <li class="tourInfo">
+
+                <h6 class="date"><i class="fa fa-calendar"></i>OCT 22</h6>
+                <h6 class="venue">miami marketta</h6>
+                <h6 class="location">miami, australia</h6>
+                <a href="#" class="tickets"><i class="fa fa-ticket"></i>Tickets</a>
+            </li>
+          </ul>
+        </div>
+        <div class="pastDates col-md-12 col-xs-12 animated">
+          <ul>
+            <li class="tourInfo">
+
+                <h6 class="date"><i class="fa fa-calendar"></i>MAR 31</h6>
+                <h6 class="venue">brighton up bar</h6>
+                <h6 class="location">darlinghurst, australia</h6>
+                <a href="#" class="tickets">More Info</a>
+            </li>
+            <li class="tourInfo">
+
+                <h6 class="date"><i class="fa fa-calendar"></i>MAR 25</h6>
+                <h6 class="venue">black bear lodge</h6>
+                <h6 class="location">fortitude valley, australia</h6>
+                <a href="#" class="tickets">More Info</a>
+            </li>
+            <li class="tourInfo">
+
+                <h6 class="date"><i class="fa fa-calendar"></i>MAR 24</h6>
+                <h6 class="venue">elsewhere bar</h6>
+                <h6 class="location">surfers paradise, australia</h6>
+                <a href="#" class="tickets">More Info</a>
+            </li>
+            <li class="tourInfo">
+
+                <h6 class="date"><i class="fa fa-calendar"></i>MAR 17</h6>
+                <h6 class="venue">the workers club</h6>
+                <h6 class="location">melbourne, australia</h6>
+                <a href="#" class="tickets">More Info</a>
+            </li>
+            <li class="tourInfo">
+
+                <h6 class="date"><i class="fa fa-calendar"></i>MAR 10</h6>
+                <h6 class="venue">pitch &amp; arts festival</h6>
+                <h6 class="location">melbourne, australia</h6>
+                <a href="#" class="tickets">More Info</a>
+            </li>
+            <li class="tourInfo">
+
+                <h6 class="date"><i class="fa fa-calendar"></i>FEB 25</h6>
+                <h6 class="venue">street party</h6>
+                <h6 class="location">townsville, australia</h6>
+                <a href="#" class="tickets">More Info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="hidden-anim">
+      <h3 class="brand">Lastlings</h3>
+      <ul class="social-media">
+          <li><a href="https://open.spotify.com/artist/0M7GyeyRi2fG8c1LdP4jhi#_=_" target="_blank"><i class="fa fa-spotify fa-lg" aria-hidden="true"></i></a></li>
+          <li><a href="https://soundcloud.com/lastlings" target="_blank"><i class="fa fa-soundcloud fa-lg" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/lastlingslastlings/" target="_blank"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.facebook.com/lastlingslastlings" target="_blank"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/LASTLINGS" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+      </ul>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

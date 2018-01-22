@@ -1,0 +1,650 @@
+*{font-family: 'Julius Sans One', sans-serif;}
+body, html{margin: 0; padding: 0;}
+li{text-decoration: none; list-style: none;}
+a:hover{text-decoration: none;}
+h1{letter-spacing: 1.1em; font-size: 48px; font-weight: lighter;}
+h5{font-size: 12px; letter-spacing: 0.9em;}
+ul{padding: 0;}
+
+/***
+  NAVBAR
+  *********************/
+.navbar{margin-bottom: 0px; z-index: 5; padding-top: 20px;}
+.navbar-default{background: none; border: none;}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-nav>li>a {margin: 20px 40px;}
+.navbar-default .navbar-nav>li>a {
+    color: #FFF;
+    letter-spacing: 0.2em;
+    transition: all 0.4s;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+  background: none;
+  color: #B0A5A2;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.navbar-toggle {
+    position: relative;
+    float: left;
+    left: 85px;
+    padding: 12px 12px;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px;
+}
+
+.brand-nav{color: #FFF; letter-spacing: 0.8em; font-weight: lighter; font-size: 16px; display: none;}
+.brand-black-nav{color: #000; text-align: center; letter-spacing: 0.8em; font-weight: lighter; font-size: 16px; display: none;}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-default .black-collapsed {
+    border-color: #000;
+}
+
+.navbar-default .black-collapsed .icon-bar {
+    background-color: #000;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 20px;
+    height: 1px;
+    border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar+.icon-bar {
+  margin-top: 5px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover{
+  color: #B0A5A2;
+}
+
+.contact-navbar .navbar-nav>li>a,
+.shop-navbar .navbar-nav>li>a{color: #000;}
+
+/***
+  FOOTER &
+  SOCIAL MEDIA
+  *********************/
+footer{text-align: center; margin-top: 75px; margin-bottom: 0px; z-index: 5;}
+footer .brand{letter-spacing: 0.9em; margin-left: 20px; font-size: 16px;}
+.shop-footer{position: absolute; bottom: 0; left: 43%;}
+.social-media{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media li{display: inline-block; margin: 5px 5px; background-color: #000; width: 32px; height: 32px; border-radius: 100%;}
+.social-media li i{color: #FFF; margin-top: 10px;}
+
+.home-social li{background-color: transparent;}
+.home-social li i{color: #FFF; margin-left: 10px;}
+
+.horizontal{
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  margin: 20px 0px;
+}
+
+.hidden-anim{display: none;}
+
+/* Index Styling */
+.home{height: 100vh; margin: 0; padding: 0;}
+.fullscreenBg{
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: -100;
+}
+.filter{
+  background-color: rgba(0, 0, 0, 0.35);
+  position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.musicVideo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100vh;
+  min-height: 100vh;
+  /* Keeps its aspect ratio*/
+  width: auto;
+  height: auto;
+}
+
+/*********************
+  HOME CONTENT
+  ***********************/
+.home-content{
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+
+  width: 100%;
+  height: 185px;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.intro{padding-left: 70px;}
+.releaseEP{font-weight: lighter;}
+
+.intro .home-social li{margin-right: 18px; transition: all 0.4s;}
+.intro .home-social:hover li{opacity: 0.4;}
+.intro .home-social li:hover{opacity: 1.0;}
+
+.navigation{
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+}
+
+.pages li a{
+  color: #fff;
+  transition: all 0.7s;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.6em;
+  margin: 0px 15px;
+}
+.pages li a:hover{color: #B0A5A2;}
+
+.playButton{
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  padding: 0 0;
+  background: none;
+  border: none;
+}
+
+.playButton:hover{background: none;}
+.btn-primary.focus, .btn-primary:focus{
+    background: none !important;
+    border: none !important;
+    outline: none;
+}
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+
+.playButton .fa-youtube-play{color: #fff; font-size: 72px; transition: all 0.5s;}
+.playButton .fa-youtube-play:hover{color:#ecf0f1; opacity: 0.7;}
+
+.modal-header{background: #000; border-bottom: none;}
+.close{opacity: 0.5; transition: 0.9s;}
+.close:hover{opacity: 0.3;}
+.modal-header > button > span{color: #fff; font-weight: bold; font-size: 28px;}
+.modal-dialog{
+  width: 90%;
+}
+.modal-body{
+  height: 80%;
+  padding: 0px 0px;
+}
+.modal-content{background-color: #000;}
+
+#videoPlayer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  /* Keeps its aspect ratio*/
+  width: auto;
+  height: auto;
+}
+
+/************
+  TOUR PAGE
+  **************/
+.tour{padding: 0; background-color: #fff;}
+.showcase{
+  height: 88%;
+  background-image: url('../img/versesBg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.tour-headers{width: 100%;}
+.tourTitle{
+  color: #fff;
+  letter-spacing: 0.8em;
+  font-weight: lighter;
+  font-size: 38px;
+  margin-top: 305px;
+  z-index: 5;
+}
+
+.tourFilter{height: 88% !important;}
+.tourContent .dateHeading{text-align: center; margin: 50px 0; letter-spacing: 0.6em; cursor: pointer;}
+.date-active{font-weight: lighter; color: #B0A5A2;}
+
+.tourContent .upcomingDates .tourInfo .venue,
+.tourContent .upcomingDates .tourInfo .location,
+.tourContent .pastDates .tourInfo .venue,
+.tourContent .pastDates .tourInfo .location{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.4em;
+}
+
+.upcomingDates{display: block;}
+.pastDates{display: none;}
+
+.upcomingDates>ul>.tourInfo, .pastDates>ul>.tourInfo{
+  display: block;
+  width: 80%;
+  padding: 10px 0;
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+.tourContent .upcomingDates .tourInfo .date,
+.tourContent .upcomingDates .tourInfo .venue,
+.tourContent .upcomingDates .tourInfo .location,
+.tourContent .upcomingDates .tourInfo .tickets,
+.tourContent .pastDates .tourInfo .venue,
+.tourContent .pastDates .tourInfo .location,
+.tourContent .pastDates .tourInfo .date,
+.tourContent .pastDates .tourInfo .tickets{
+  display: inline-block;
+  margin: auto;
+  color: #000;
+}
+
+.tourContent .upcomingDates .tourInfo .date,
+.tourContent .upcomingDates .tourInfo .venue,
+.tourContent .upcomingDates .tourInfo .location,
+.tourContent .pastDates .tourInfo .venue,
+.tourContent .pastDates .tourInfo .location,
+.tourContent .pastDates .tourInfo .date{
+  width: 25%;
+}
+
+.tourContent .upcomingDates .tourInfo .tickets,
+.tourContent .pastDates .tourInfo .tickets{
+  float: right;
+  transition: all 0.4s;
+}
+
+.tourContent .upcomingDates .tourInfo .tickets:hover,
+.tourContent .pastDates .tourInfo .tickets:hover{
+  color: #B0A5A2;
+}
+
+.tourContent .upcomingDates .tourInfo .fa-calendar,
+.tourContent .upcomingDates .tourInfo .fa-ticket,
+.tourContent .pastDates .tourInfo .fa-calendar,
+.tourContent .pastDates .tourInfo .fa-ticket{
+  margin-right: 8px;
+}
+
+
+/************
+  CONTACT PAGE
+  **************/
+.contact{position: relative;}
+.container-fluid{padding: 0 0;}
+.contact-showcase{
+  height: 100%;
+  width: 100%;
+  background-image: url('../img/contact3.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  text-align: center;
+}
+
+.contactContent{width: 100%; margin-top: 220px; padding: 10px 50px;}
+.contactHeader{color: #000; font-size: 18px;}
+.underline{margin: auto; width: 60px; height: 1px; background-color: #000; margin-bottom: 25px;}
+.contactInfo{
+  color: #000;
+  margin: 20px 15px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.4em;
+  font-weight: lighter;
+}
+
+.lastlingsContact{margin-bottom: 90px;}
+
+.contact footer{margin-top: 120px;}
+.contact footer .brand{color: #000;}
+.contact footer .social-media li{background-color: #FFF;}
+.contact footer .social-media li i{color: #000;}
+
+/************
+  SHOP PAGE
+  **************/
+.shop-showcase{height: 80%; text-align: center;}
+.shop-showcase-img{
+  width: 632px;
+  height: 455px;
+  margin: auto;
+  background-image: url('../img/SHOPbg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@-o-keyframes arrowmove {
+  0%{bottom: 45px;}
+  50%{bottom: 65px;}
+  100%{bottom: 45px;}
+}
+
+@-moz-keyframes arrowmove {
+  0%{bottom: 45px;}
+  50%{bottom: 65px;}
+  100%{bottom: 45px;}
+}
+
+@-webkit-keyframes arrowmove {
+  0%{bottom: 45px;}
+  50%{bottom: 65px;}
+  100%{bottom: 45px;}
+}
+
+@keyframes arrowmove {
+  0%{bottom: 45px;}
+  50%{bottom: 65px;}
+  100%{bottom: 45px;}
+}
+
+.shop-showcase .arrow-anim{
+  position: absolute;
+  left: 50%;
+  bottom: 65px;
+
+  animation-name: arrowmove;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.shop-showcase-title{color: #FFF; padding-top: 195px; letter-spacing: 0.8em;}
+.shop-merchandise{text-align: center;}
+.shop-products{margin: auto; text-align: center;}
+
+.shopButton{
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  background-color: #FFF;
+  border: none;
+  transition: all 0.4s;
+}
+
+.shopButton:hover>.product-view{
+  color: #B0A5A2;
+}
+.btn-primary:hover{
+  background-color: #FFF;
+}
+
+.shopButton:focus{
+  outline: none;
+}
+
+.product{
+  width: 225px;
+  height: 300px;
+  display: inline-block;
+  margin: 10px 40px;
+  margin-top: 80px;
+}
+.product-view{
+  text-align: center;
+  color: #000;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+.product-name,
+.product-price{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  color: #000;
+}
+
+
+#shopModal{width: 75%; height: 80%; overflow-y: hidden; margin: auto;}
+.shop-modal .modal-content, .shop-modal .modal-header{
+  background-color: #FFF;
+}
+
+.shop-modal .modal-header > button > span{
+  color: #000;
+}
+
+
+#shopModalLabel{
+  letter-spacing: 0.2em;
+  font-weight: bolder;
+  margin-top: 5px;
+}
+#shopModalImg{text-align: center; margin: auto;}
+
+.product-info{font-family: 'Raleway', sans-serif;}
+.product-img{text-align: center;}
+
+.p_price{margin-top: 20px; font-weight: bold;}
+.size-dropdown{width: 40%; margin-top: 55px; display: none;}
+.addcart-btn{width: 130px; height: 35px; margin-top: 25px; border-radius: 7px; background-color:#000; color: #FFF; border: 0px; font-weight: bold; transition: all 0.5s;}
+.addcart-btn:hover{color: #000; background-color: #B0A5A2;}
+.addcart-btn:focus{outline: none;}
+
+/* Media Queries */
+/*** Home Page ***/
+@media only screen and (max-width: 1180px) {
+
+  /* LASTINGS MAIN PAGE */
+  .intro .title {font-size: 36px; letter-spacing: 0.8em;}
+  .intro .releaseEP{font-size: 10px;}
+  .pages li a{font-size: 12px;}
+
+}
+
+@media  only screen and (max-width: 990px) {
+
+  /* LASTINGS MAIN PAGE */
+  .intro{padding-left: 40px;}
+  .intro .title {font-size: 32px;}
+  .intro .releaseEP{font-size: 8px; line-height: 1.6em;}
+  .pages li a{font-size: 10px;}
+
+  /* TOUR PAGE */
+  .tourContent .dateHeading{font-size: 18px;}
+  .tourTitle{
+    font-size: 27px;
+    margin-top: 275px;
+  }
+
+  /* CONTACT PAGE */
+  .contactContent {margin-top: 20px;}
+  .contactContent .management, .contactContent .lastlingsContact{margin-top: 40px;}
+  .contactHeader{color: #000; font-size: 14px; font-weight: bolder;}
+  .contactInfo{font-size: 12px; font-weight: bolder;}
+
+
+  /* SHOP PAGE */
+  .shop-showcase-img{width: 532px; height: 400px; margin-top: 40px;}
+}
+
+@media  only screen and (max-width: 500px) {
+  /* LASTINGS MAIN PAGE */
+  .home{
+    background-image: url('../img/urgesBg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+  .home-content{bottom: 175px;}
+  .fullscreenBg{display: none;}
+
+  .intro .title, .intro .releaseEP{font-weight: bolder;}
+  .intro .title {font-size: 26px; letter-spacing: 0.8em;}
+  .intro .social li{margin-right: 10px;}
+
+  .playButton .fa-youtube-play{color: #fff; font-size: 60px;}
+  .navigation{
+    position: absolute;
+    left: 8px;
+    bottom: -105px;
+    padding: 0;
+    max-width: 90%;
+  }
+
+  .pages{
+    display: block;
+    padding-left: 15px;
+  }
+  .pages li{margin-bottom: 18px;}
+  .pages li a{letter-spacing: 0.1em;}
+
+  .playButton{
+    top: 22%;
+    left: 42%;
+  }
+
+  /* TOUR PAGE */
+  .navbar-toggle {left: 65px;}
+  .navbar-nav>li>a {margin: 0px 0px;}
+  .brand-nav{display: block;}
+  .brand-black-nav{display: block;}
+  .tourContent .dateHeading{font-size: 12px;}
+  .tourTitle{font-size: 20px; margin-top: 255px;}
+
+  .upcomingDates>ul>.tourInfo, .pastDates>ul>.tourInfo {width: 90%; text-align: center;}
+
+  .tourContent .upcomingDates .tourInfo .date, .tourContent .upcomingDates .tourInfo .venue, .tourContent .upcomingDates .tourInfo .location, .tourContent .pastDates .tourInfo .venue, .tourContent .pastDates .tourInfo .location, .tourContent .pastDates .tourInfo .date {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .tourContent .upcomingDates .tourInfo .tickets, .tourContent .pastDates .tourInfo .tickets {
+    float: none;
+  }
+
+  .tourContent .upcomingDates .tourInfo .fa-calendar, .tourContent .upcomingDates .tourInfo .fa-ticket, .tourContent .pastDates .tourInfo .fa-calendar, .tourContent .pastDates .tourInfo .fa-ticket {
+      margin-right: 8px;
+      margin-top: 20px;
+  }
+
+  .tourContent .pastDates .tourInfo .tickets {
+    margin-top: 20px;
+    color: #B0A5A2;
+  }
+
+  h6{font-size: 10px;}
+
+  /* CONTACT PAGE */
+  .contactInfo {font-size: 10px;}
+  .contactContent {margin-bottom: 20px;}
+
+  /* SHOP PAGE */
+  .shop-showcase-img{width: 400px; height: 300px; margin-top: 80px;}
+  .product-info{text-align: center;}
+  .shop-showcase-title{font-size: 22px; padding-top: 130px;}
+  .size-dropdown{margin: auto;}
+  .p_price{margin-top: 10px;}
+  #shopModal{width: 95%; height: 80%;}
+  #shopModalLabel{font-size: 20px;}
+  #cart-btn{margin-top: 15px;}
+
+}
+
+@media  only screen and (max-width: 430px) {
+    /* CONTACT PAGE */
+    .contactInfo {font-size: 10px;}
+    .contactContent {margin-top: 0px; margin-bottom: 75px; padding: 2px 5px;}
+    .lastlingsContact{margin-bottom: 20px;}
+
+    /* SHOP PAGE */
+    .shop-showcase-img{width: 350px; height: 275px; margin-top: 60px;}
+    .shop-showcase-title{font-size: 20px; padding-top: 110px;}
+
+}
+
+
+@media  only screen and (max-width: 385px) {
+    /* LASTINGS MAIN PAGE */
+    .intro{padding-left: 30px;}
+    .intro .title {font-size: 20px;}
+    .pages{padding-left: 10px;}
+
+    /* TOUR PAGE */
+    .navbar-toggle {left: 25px;}
+    .tourContent .dateHeading {font-size: 10px;}
+
+    /* CONTACT PAGE */
+    .contactInfo {font-size: 9px;}
+    .lastlingsContact{margin-bottom: 3px;}
+    .contactContent {margin-top: 0px; margin-bottom: 50px; padding: 2px 5px;}
+
+    /* SHOP PAGE */
+    .shop-showcase-img{width: 300px; height: 255px; margin-top: 50px;}
+    #shopModalLabel{font-size: 12px;}
+    #shopModal{width: 95%; height: 90%;}
+    .p_price{font-size: 10px;}
+
+}
+
+
+@media  only screen and (max-width: 355px) {
+    /* CONTACT PAGE */
+    .contactInfo {font-size: 9px;}
+    .lastlingsContact{margin-bottom: 3px;}
+    .contactContent{margin-bottom: 10px;}
+
+
+}
