@@ -564,6 +564,8 @@ footer .brand{letter-spacing: 0.9em; margin-left: 20px; font-size: 16px;}
   .tourContent .dateHeading{font-size: 12px;}
   .tourTitle{font-size: 20px; margin-top: 255px;}
 
+  .showcase{background-attachment: scroll;}
+
   .upcomingDates>ul>.tourInfo, .pastDates>ul>.tourInfo {width: 90%; text-align: center;}
 
   .tourContent .upcomingDates .tourInfo .date, .tourContent .upcomingDates .tourInfo .venue, .tourContent .upcomingDates .tourInfo .location, .tourContent .pastDates .tourInfo .venue, .tourContent .pastDates .tourInfo .location, .tourContent .pastDates .tourInfo .date {
